@@ -404,7 +404,7 @@
     .run(['$templateCache', function($templateCache) {
         $templateCache.put('views/ss/menu-link.tmpl.html',
             '<md-button\n' +
-            '   ss-style-color="{\'background-color\': (isSelected(section.state) || $state.includes(section.state)) ? \'primary.600\': \'primary.700\'}"' +
+            '   ss-style-color="{\'background-color\': (isSelected(section.state) || $state.includes(section.state)) ? \'primary.400\': \'primary.500\'}"' +
             '   class="md-raised md-primary"' +
             '   ui-sref="{{section.state}}"\n' +
             '   ng-click="focusSection(section)">\n' +
@@ -443,7 +443,7 @@
 
         $templateCache.put('views/ss/menu-sidenav.tmpl.html',
             '<ul class="menu">' +
-            '    <li ss-style-color="{\'border-bottom-color\': \'primary.600\'}" ng-repeat="section in menu.sections" ng-if="!section.hidden">' +
+            '    <li ss-style-color="{\'border-bottom-color\': \'primary.400\'}" ng-repeat="section in menu.sections" ng-if="!section.hidden">' +
             '        <h2 ss-style-color="{\'color\': \'primary.A100\'}" class="menu-heading md-subhead" ng-if="section.type === \'heading\'">' +
             '            <span ng-if="section.icon" class="{{section.icon}}">&nbsp;&nbsp;</span>{{section.name}}\n' +
             '        </h2>' +
